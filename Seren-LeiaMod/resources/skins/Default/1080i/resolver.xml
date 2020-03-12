@@ -80,7 +80,7 @@
 
         <!-- Seren Logo -->
         <control type="image" id="1001">
-            <top>-350</top>
+            <top>-120</top>
             <left>880</left>
             <width>150</width>
             <aspectratio>keep</aspectratio>
@@ -93,7 +93,7 @@
 
         <control type="label">
             <left>0</left>
-            <top>-430</top>
+            <top>-250</top>
             <width>100%</width>
             <font>font12</font>
             <align>center</align>

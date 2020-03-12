@@ -11,7 +11,7 @@
             <control type="image">
                 <height>300</height>
                 <top>0</top>
-                <texture flipy="true">common/osd-dim.png</texture>
+                <texture flipy="true">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/osd-dim.png</texture>
             </control>
             
             <control type="group">
@@ -29,7 +29,7 @@
                         <visible>String.IsEmpty(Window.Property(item.art.landscape)) + String.IsEmpty(Window.Property(item.art.fanart)) + String.IsEmpty(Window.Property(item.art.thumb))</visible>
                         
                         <control type="image">
-                            <texture background="true" colordiffuse="PosterBack">common/geometric.png</texture>
+                            <texture background="true" colordiffuse="PosterBack">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/geometric.png</texture>
                             <visible>!Skin.HasSetting(DisableGeometric)</visible>
                         </control>
                         
@@ -42,21 +42,21 @@
                     <!-- Thumb -->
                     <control type="group">
                         <control type="image">
-                            <texture background="true" diffuse="diffuse/landscape-small-wall.png">$INFO[Window.Property(item.art.landscape)]</texture>
-                            <bordertexture border="30" colordiffuse="Shadow">common/shadow-15.png</bordertexture>
+                            <texture background="true" diffuse="special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/landscape-small-wall.png">$INFO[Window.Property(item.art.landscape)]</texture>
+                            <bordertexture border="30" colordiffuse="Shadow">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/shadow-15.png</bordertexture>
                             <aspectratio scalediffuse="true">scale</aspectratio>
                         </control>
                         
                         <control type="image">
-                            <texture background="true" diffuse="diffuse/landscape-small-wall.png">$INFO[Window.Property(item.art.fanart)]</texture>
-                            <bordertexture border="30" colordiffuse="Shadow">common/shadow-15.png</bordertexture>
+                            <texture background="true" diffuse="special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/landscape-small-wall.png">$INFO[Window.Property(item.art.fanart)]</texture>
+                            <bordertexture border="30" colordiffuse="Shadow">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/shadow-15.png</bordertexture>
                             <aspectratio scalediffuse="true">scale</aspectratio>
                             <visible>String.IsEmpty(Window.Property(item.art.landscape))</visible>
                         </control>
                         
                         <control type="image">
-                            <texture background="true" diffuse="diffuse/landscape-small-wall.png">$INFO[Window.Property(item.art.thumb)]</texture>
-                            <bordertexture border="30" colordiffuse="Shadow">common/shadow-15.png</bordertexture>
+                            <texture background="true" diffuse="special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/landscape-small-wall.png">$INFO[Window.Property(item.art.thumb)]</texture>
+                            <bordertexture border="30" colordiffuse="Shadow">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/shadow-15.png</bordertexture>
                             <aspectratio scalediffuse="true">scale</aspectratio>
                             <visible>String.IsEmpty(Window.Property(item.art.landscape)) + String.IsEmpty(Window.Property(item.art.fanart))</visible>
                         </control>
@@ -66,7 +66,7 @@
                     <!-- Progress Bar -->
                     <control type="progress" id="3014">
                         <height>8</height>
-                        <bottom>0</bottom>
+                        <bottom>-8</bottom>
                         <left>0</left>
                         <right>0</right>
                     </control>
@@ -74,13 +74,13 @@
                 
                 <!-- Labels -->
                 <control type="group">
-                    <left>330</left>
+                    <left>310</left>
                     
                     <control type="label">
                         <height>30</height>
                         <font>font_title_small</font>
                         <label>Next Episode in [COLOR $VAR[ColorHighlight]]$INFO[Player.TimeRemaining(ss),,][/COLOR] seconds...</label>
-                        <textcolor>panel_fg_100</textcolor>
+                        <textcolor>66FEC254</textcolor>
                         <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
                     </control>
                     
@@ -88,21 +88,21 @@
                         <height>30</height>
                         <font>font_title_small</font>
                         <label>Next Episode...</label>
-                        <textcolor>panel_fg_100</textcolor>
+                        <textcolor>66FEC254</textcolor>
                         <visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
                     </control>
                     
                     <!-- Details -->
                     <control type="grouplist">
-                        <top>40</top>
-                        <height>40</height>
+                        <top>-80</top>
+                        <height>30</height>
                         <orientation>horizontal</orientation>
                         <usecontrolcoords>true</usecontrolcoords>
                         <itemgap>0</itemgap>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="label" value="$INFO[Window.Property(item.info.tvshowtitle)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="divider" value="false" />
                             <param name="fallback" value="N/A" />
                             <param name="visible" value="true" />
@@ -113,28 +113,28 @@
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90002" />
                             <param name="label" value="$INFO[Window.Property(item.info.season),S,]$INFO[Window.Property(item.info.episode),E,]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90003" />
                             <param name="label" value="$INFO[Window.Property(item.info.title)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90004" />
                             <param name="label" value="$INFO[Window.Property(item.info.aired)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90005" />
                             <param name="label" value="$INFO[Window.Property(item.info.rating)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                     </control>
@@ -155,8 +155,8 @@
                         <include content="Object_IconicButton">
                             <param name="id" value="3001" />
                             <param name="groupid" value="9011" />
-                            <param name="label" value="Continue Watching" />
-                            <param name="icon" value="special://skin/extras/icons/play3.png" />
+                            <param name="label" value="Watch Now" />
+                            <param name="icon" value="special://userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/play.png" />
                             <param name="visible" value="!Integer.IsGreater(Player.TimeRemaining,59)" />
                             <onclick>SendClick(3012)</onclick>
                         </include>
@@ -164,8 +164,8 @@
                         <include content="Object_IconicButton">
                             <param name="id" value="3002" />
                             <param name="groupid" value="9013" />
-                            <param name="label" value="Stop" />
-                            <param name="icon" value="special://skin/extras/icons/disabled.png" />
+                            <param name="label" value="Close" />
+                            <param name="icon" value="special://userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/error.png" />
                             <param name="visible" value="true" />
                         </include>
                     </control>

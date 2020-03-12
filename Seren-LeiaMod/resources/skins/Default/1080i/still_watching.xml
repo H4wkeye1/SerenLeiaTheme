@@ -66,7 +66,7 @@
                     <!-- Progress Bar -->
                     <control type="progress" id="3014">
                         <height>8</height>
-                        <bottom>0</bottom>
+                        <bottom>-8</bottom>
                         <left>0</left>
                         <right>0</right>
                     </control>
@@ -80,7 +80,7 @@
                         <height>30</height>
                         <font>font_title_small</font>
                         <label>Next Episode in [COLOR $VAR[ColorHighlight]]$INFO[Player.TimeRemaining(ss),,][/COLOR] seconds...</label>
-                        <textcolor>panel_fg_100</textcolor>
+                        <textcolor>66FEC254</textcolor>
                         <visible>!Integer.IsGreater(Player.TimeRemaining,59)</visible>
                     </control>
                     
@@ -88,7 +88,7 @@
                         <height>30</height>
                         <font>font_title_small</font>
                         <label>Next Episode...</label>
-                        <textcolor>panel_fg_100</textcolor>
+                        <textcolor>66FEC254</textcolor>
                         <visible>Integer.IsGreater(Player.TimeRemaining,59)</visible>
                     </control>
                     
@@ -102,7 +102,7 @@
                         
                         <include content="Object_Info_Line_Label">
                             <param name="label" value="$INFO[Window.Property(item.info.tvshowtitle)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="divider" value="false" />
                             <param name="fallback" value="N/A" />
                             <param name="visible" value="true" />
@@ -113,28 +113,28 @@
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90002" />
                             <param name="label" value="$INFO[Window.Property(item.info.season),S,]$INFO[Window.Property(item.info.episode),E,]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90003" />
                             <param name="label" value="$INFO[Window.Property(item.info.title)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90004" />
                             <param name="label" value="$INFO[Window.Property(item.info.aired)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                         
                         <include content="Object_Info_Line_Label">
                             <param name="id" value="90005" />
                             <param name="label" value="$INFO[Window.Property(item.info.rating)]" />
-                            <param name="textcolor" value="panel_fg_100" />
+                            <param name="textcolor" value="66FEC254" />
                             <param name="visible" value="true" />
                         </include>
                     </control>
@@ -155,8 +155,8 @@
                         <include content="Object_IconicButton">
                             <param name="id" value="3001" />
                             <param name="groupid" value="9011" />
-                            <param name="label" value="Watch Now" />
-                            <param name="icon" value="special://skin/extras/icons/play3.png" />
+                            <param name="label" value="Continue Watching" />
+                            <param name="icon" value="special://skin/extras/icons/play.png" />
                             <param name="visible" value="!Integer.IsGreater(Player.TimeRemaining,59)" />
                             <onclick>SendClick(3012)</onclick>
                         </include>
@@ -164,8 +164,8 @@
                         <include content="Object_IconicButton">
                             <param name="id" value="3002" />
                             <param name="groupid" value="9013" />
-                            <param name="label" value="Close" />
-                            <param name="icon" value="special://skin/extras/icons/disabled.png" />
+                            <param name="label" value="Stop" />
+                            <param name="icon" value="special://skin/extras/icons/error.png" />
                             <param name="visible" value="true" />
                         </include>
                     </control>
