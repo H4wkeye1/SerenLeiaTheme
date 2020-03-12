@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------------------------
-# LeiaSerenTheme - A Seren theme for Arctic Zephyr Leia mod
+# SerenLeiaTheme - A Seren theme for Arctic Zephyr Leia mod
 A modification of the great AuraMod Seren Theme by SerpentDrago, which you can find here. All credit goes to him for making this theme.
 https://github.com/SerpentDrago/SerenTheme-SerenMod-Full
 
@@ -23,10 +23,10 @@ OR
 http://bit.ly/LeiaSerenMod
 
 
-                                                         Scraping
+                                                        Scraping
 ![alt text](https://i.imgur.com/5JdPkqi.png)
 
-                                                       Source Select
+                                                      # Source Select
 ![alt text](https://i.imgur.com/gzDBI3Y.png)
 
                                                          Resolver
