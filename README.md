@@ -12,8 +12,7 @@ Download here:
 https://github.com/H4wkeye1/LeiaSerenTheme/zipball/master
 
 OR
-http://tiny.cc/LeiaSeren
-
+http://bit.ly/LeiaSerenMod
 
 
                                                          Scraping
