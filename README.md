@@ -3,10 +3,10 @@
 A modification of the great AuraMod Seren Theme by SerpentDrago, which you can find here. All credit goes to him for making this theme.
 https://github.com/SerpentDrago/SerenTheme-SerenMod-Full
 
-The AZ Leia skin mod is made by beatmasterRS and can be found here
+The Arctic Zephyr Leia skin mod is made by beatmasterRS and can be found here
 https://github.com/beatmasterRS/skin.arctic.zephyr.mod
 
-Some textures used in the theme have been taken from AZ 2 mod made by jurialmunkey and the skin can be found here
+Some textures used in the theme have been taken from Arctic Zephyr 2 skin made by jurialmunkey and the skin can be found here
 https://github.com/jurialmunkey/skin.arctic.zephyr.2
 
 All credits go to their respective owners. I only modified/built upon their work.
