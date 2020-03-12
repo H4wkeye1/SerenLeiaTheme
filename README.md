@@ -16,6 +16,8 @@ All credits go to their respective owners. I only modified/built upon their work
 
 I've modified it to work on Arctic Zephyr Leia Mod skin, and added some minor visual/color adjustments. Still has bugs, a work in progress. Play Next is still broken atm.
 
+To install via Kodi, go to Seren > Tools > Open Settings > Interface > scroll down to Themes and click Install, then choose Web Location and paste the link below.
+
 Download here:
 https://github.com/H4wkeye1/LeiaSerenTheme/zipball/master
 
@@ -23,10 +25,10 @@ OR
 http://bit.ly/LeiaSerenMod
 
 
-                                                        Scraping
+                                                         Scraping
 ![alt text](https://i.imgur.com/5JdPkqi.png)
 
-                                                      # Source Select
+                                                       Source Select
 ![alt text](https://i.imgur.com/gzDBI3Y.png)
 
                                                          Resolver
