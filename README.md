@@ -4,6 +4,8 @@ A modification of the great AuraMod Seren Theme by SerpentDrago, which you can f
 https://github.com/SerpentDrago/SerenTheme-SerenMod-Full
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
 I've modified it to work on Arctic Zephyr Leia Mod skin, and added some minor visual/color adjustments. Still has bugs, a work in progress. Play Next is still broken atm.
 
 Download here:
