@@ -9,7 +9,7 @@
             
             <!-- Shadow -->
             <control type="image">
-                <height>300</height>
+                <height>280</height>
                 <top>0</top>
                 <texture flipy="true">special://home/userdata/addon_data/plugin.video.seren/skins/Seren-LeiaMod/resources/skins/media/osd-dim.png</texture>
             </control>
