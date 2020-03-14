@@ -8,7 +8,7 @@
         <control type="group">
             <include>Animation.FadeIn.Slide</include>
             <include>Animation.FadeOut</include>
-            <right>1600</right>
+            <right>1550</right>
             <bottom>860</bottom>
             <width>310</width>
             <height>160</height>				
@@ -19,7 +19,8 @@
 				<width>312</width>                           
 				<texture colordiffuse="Box2" background="true">common/box2.png</texture>   
 				<visible>!Skin.HasSetting(thumbnails.white)</visible>                        
-			</control>			
+            </control>	
+            		
             <control type="label" description="text">
                 <top>-64</top>
                 <left>0</left>
@@ -31,6 +32,14 @@
                 <textcolor>ffededed</textcolor>
                 <shadowcolor>bf000000</shadowcolor>
             </control>
+
+            <control type="progress" id="3014">
+                <height>8</height>
+                <bottom>-8</bottom>
+                <left>0</left>
+                <right>0</right>
+            </control>
+
             <control type="image" description="fanart">
                 <width>100%</width>
                 <height>100%</height>
@@ -38,6 +47,7 @@
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <texture>$INFO[Player.Art(fanart)]</texture>
             </control>  
+
             <control type="label" description="text">
                 <left>350</left>
                 <right>260</right>
@@ -48,6 +58,7 @@
                 <label>$INFO[Window.Property(item.info.tvshowtitle)] - $INFO[Window.Property(item.info.season),S,]$INFO[Window.Property(item.info.episode),E, - ]$INFO[Window.Property(item.info.title)]</label>
                 <textcolor>PanelWhite100</textcolor>
             </control>
+
             <control type="button" id="3001">
                 <description>Play</description>
                 <right>-180</right>
@@ -66,6 +77,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
                 <texturenofocus colordiffuse="40f5f5f5" border="5">common/box.png</texturenofocus>
             </control>
+
             <control type="image">
                 <description>Play</description>
                 <right>-148</right>
@@ -76,6 +88,7 @@
                 <aspectratio>keep</aspectratio>
                 <animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus(3012)">Conditional</animation>
             </control>
+
             <control type="button" id="3002">
                 <description>Cancel</description>
                 <right>-300</right>
@@ -94,6 +107,7 @@
                 <texturefocus colordiffuse="$VAR[ColorHighlight]" border="5">common/box.png</texturefocus>
                 <texturenofocus colordiffuse="40f5f5f5" border="5">common/box.png</texturenofocus>
             </control>
+
             <control type="image">
                 <description>Play</description>
                 <right>-420</right>
